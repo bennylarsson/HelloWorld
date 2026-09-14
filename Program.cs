@@ -1,3 +1,3 @@
-﻿Console.Write("Number: ");
-var input = Console.ReadLine(); int siffra = int.Parse(input);
-Console.WriteLine(siffra * 2);
+﻿Console.Write("Första: "); int tal1 = int.Parse(Console.ReadLine());
+Console.Write("Andra: "); int tal2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Resultat: " + (tal1 + tal2));
