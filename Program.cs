@@ -7,10 +7,16 @@ class Program
         Console.Write("Modulus: ");
         int modulus = int.Parse(Console.ReadLine());
 
-        for (int i = 0; i <= 20; i++)
+        Console.Write("Från: ");
+        int franTal = int.Parse(Console.ReadLine());
+
+        Console.Write("Till: ");
+        int tillTal = int.Parse(Console.ReadLine());
+
+        for (int i = franTal; i <= tillTal; i++)
         {
-            int result = i % modulus;
-            Console.WriteLine($"{i} % {modulus} = {result}");
+            int resultat = i % modulus;
+            Console.WriteLine($"{i} % {modulus} = {resultat}");
         }
     }
-}   
+}
