@@ -1,15 +1,17 @@
-﻿Console.WriteLine("Storlek: ");
-int storlek = int.Parse(Console.ReadLine());
-
-for (int nuvarandestorlek = 1; nuvarandestorlek <= storlek; nuvarandestorlek++)
+﻿using System;
+class Program
 {
-    for (int i = 0; i < nuvarandestorlek; i++)
+    static void Main()
     {
-        for (int j = 0; j < nuvarandestorlek; j++)
+        Console.WriteLine("storlek: ");
+        int storlek = int.Parse(Console.ReadLine()!);
+        for (int i = 1; i <= storlek; i++)
         {
-            Console.Write("*");
+            for (int j = 1; j <= i; j++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
     }
-    Console.WriteLine();
 }
