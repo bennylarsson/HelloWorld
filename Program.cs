@@ -1,23 +1,30 @@
 ﻿using System;
 
-class Program
+namespace Oving1
 {
-    static void Main()
+    internal class Program
     {
-        // Ber användaren om ett nummer
-        Console.Write("Nummer: ");
-
-        // Läser in svaret som en sträng och omvandlar (parsar) det till ett heltal
-        int nummer = int.Parse(Console.ReadLine());
-
-        // Kontrollerar om tal2et är jämnt eller ojämnt med hjälp av modulo (%)
-        if (nummer % 2 == 0)
+        static void Main(string[] args)
         {
-            Console.WriteLine($"{nummer} är jämnt");
-        }
-        else
-        {
-            Console.WriteLine($"{nummer} är ojämnt");
+            //Läser in förnamnet
+            Console.Write("Vad är ditt förnamn: ");
+            string fornamn = Console.ReadLine();
+            //Läser in efternamn
+            Console.Write("Vad är ditt efternamn: ");
+            string efternamn = Console.ReadLine();
+            //Hälsar
+            Console.WriteLine("Hej " + fornamn + " " + efternamn + "!");
+            //Frågar hur man mår
+            Console.Write("Hur mår du idag ? ");
+            string mår = Console.ReadLine();
+            //Frågar efter ålder
+            Console.Write("Hur gammal är du ? ");
+            string inputAlder = Console.ReadLine();
+            int alder = int.Parse(inputAlder);
+            // Kollar på ett cirka hur gammal du är..
+            int dagar = alder * 365;
+            Console.WriteLine("Du har levt i cirka " + dagar + " dagar.");
+            Console.ReadLine();
         }
     }
 }
